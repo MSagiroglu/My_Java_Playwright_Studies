@@ -1,0 +1,16 @@
+1- mvn versions:display-dependency-updates
+Bu komut, bağımlılıkların güncellenmiş versiyonlarını gösterir.
+
+2- mvn versions:use-latest-versions
+Bu komut, proje bağımlılıklarını en son versiyonlara günceller.
+
+3- mvn versions :display-plugin-updates
+Bu komut, plugin bağımlılıklarının güncellenmiş versiyonlarını gösterir.
+
+4- mvn versions:use-latest-plugins
+Bu komut, proje plugin bağımlılıklarını en son versiyonlara günceller.
+
+5- page.pause(); metodunu kullanarak sayfayı durdurabilir vr inspect ve kayıt ile
+                elementleri kontrol edebilirsiniz ve örnek kodlarını inceleyebilirsiniz.
+
+6-
