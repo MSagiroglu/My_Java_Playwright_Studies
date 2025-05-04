@@ -24,7 +24,10 @@ public class HandleAutoSuggestions {
             System.out.println(googlePage.getAutoSuggestion().nth(i).innerText());
             if (googlePage.getAutoSuggestion().nth(i).innerText().contains(searchText)) {
                 System.out.println("Mustafa Playwright Öğrenmeye devam ediyor");
-
+            }
+            if (googlePage.getAutoSuggestion().nth(i).innerText().contains("nerede")) {
+                ReusableMethods.clickElement(googlePage.getAutoSuggestion().nth(i));
+                break;
             }
 
         }
