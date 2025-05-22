@@ -5,6 +5,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.assertions.PlaywrightAssertions;
+import org.testng.Assert;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -84,6 +85,42 @@ public class ReusableMethods {
         FileChooser fileChooser = page.waitForFileChooser(() -> element.click());
         fileChooser.setFiles(files);
     }
+
+    //Accept Alert Metodu
+    public static void acceptAlert(Page page, Locator element,String expectedText) {
+        page.onDialog(dialog -> {
+            String message = dialog.message();
+            System.out.println("msg = " + message);
+            Assert.assertTrue(message.contains(expectedText));
+            dialog.accept();
+        });
+        element.click();
+    }
+    //Dismiss Alert Metodu
+    public static void dismissAlert(Page page, Locator element,String expectedText) {
+        page.onDialog(dialog -> {
+            String message = dialog.message();
+            System.out.println("msg = " + message);
+            Assert.assertTrue(message.contains(expectedText));
+            dialog.dismiss();
+        });
+        element.click();
+    }
+    //Prompt Alert Metodu
+    public static void promptAlert(Page page, Locator element,String expectedText,String text) {
+        page.onDialog(dialog -> {
+            String message = dialog.message();
+            System.out.println("msg = " + message);
+            Assert.assertTrue(message.contains(expectedText));
+            dialog.accept(text);
+        });
+        element.click();
+    }
+    // Elemente Scroll Metodu
+    public static void scrollToElement(Locator element) {
+        element.scrollIntoViewIfNeeded();
+    }
+
 
 
 
