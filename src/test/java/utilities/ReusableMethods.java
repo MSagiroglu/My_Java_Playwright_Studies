@@ -120,6 +120,16 @@ public class ReusableMethods {
     public static void scrollToElement(Locator element) {
         element.scrollIntoViewIfNeeded();
     }
+    // Yeni sekmenin açılmasını bekler ve tıklama işlemini yapar
+    public static Page clickAndWaitForNewPage(Page currentPage, Locator elementToClick) {
+        // Yeni sekmenin açılmasını bekler ve tıklama işlemini yapar
+        Page newPage = currentPage.context().waitForPage(() -> {
+            elementToClick.click();
+        });
+        // Yeni açılan sekmeyi ön plana getir
+        newPage.bringToFront();
+        return newPage;
+    }
 
 
 

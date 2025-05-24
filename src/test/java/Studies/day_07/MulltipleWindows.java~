@@ -27,32 +27,12 @@ public class MulltipleWindows {
         Thread.sleep(1000);
         newPage.bringToFront();
         Thread.sleep(1000);
-        //  newPage.close();
-        //  Thread.sleep(1000);
-        //  page.close();
-        //  context.close();
-        //  browser.close();
+     //  newPage.close();
+     //  Thread.sleep(1000);
+     //  page.close();
+     //  context.close();
+     //  browser.close();
 
 
     }
-
-    @Test
-    public void test2() throws InterruptedException {
-        Browser browser = Playwright.create().chromium()
-                .launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(500));
-        BrowserContext context = browser.newContext();
-        Page page = context.newPage();
-        F4eAppPage f4eAppPage = new F4eAppPage(page);
-
-        page.navigate("https://f4e.app/tr/");
-        f4eAppPage.getAcceptButton().click();
-        ReusableMethods.scrollToElement(f4eAppPage.getLinkedin());
-
-        // ReusableMethods'ten yeni metodu çağırıyoruz
-        Page newPage = ReusableMethods.clickAndWaitForNewPage(page, f4eAppPage.getLinkedin());
-
-        System.out.println("newPage.title() = " + newPage.title());
-        Thread.sleep(1000);
-    }
-
 }
