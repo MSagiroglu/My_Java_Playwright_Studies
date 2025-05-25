@@ -150,7 +150,7 @@ public class ReusableMethods {
     }
 
  // Belirli bir başlığa (partialTitle) sahip sekmeyi bulur ve onu ön plana getirir
-    public static Page switchToPageByPartialTitle(BrowserContext context, String partialTitle) {
+    public static Page switchToPageByTitle(BrowserContext context, String partialTitle) {
         for (Page page : context.pages()) {
             try {
                 String title = page.title();

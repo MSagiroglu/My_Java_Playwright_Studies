@@ -1,0 +1,115 @@
+{
+  "cookies": [
+    {
+      "name": "_culture",
+      "value": "tr-TR",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": ".ASPXAUTH",
+      "value": "B0CF7069B4F53F9DB6097304D919C84155A320897398A3C600E4825AC1853D0150B67E48017F78A7EED7D5B1EC7E70919A208D1A05E88265A47F33BEBEA2F26E14281C7C7401475885EC6AAC1DCB4EA90C0F2A10D179E672AD3E26D285CA13FABA2FF90536D841C832C507E5D46109AC65F4B56CE21C132423C9FC1772BBF611BCC43226516C1B14D89E7A361FAECCEF756988F73E75BACEBB58D2C9BA3F5D70D017DE3FE267F82D6DCFFD223ED3F277300B454BCE7A5CFFFFC8FB4A05D90B8FD44C52CAB5D348809C9DB409A12DAA6F7157BA7701C91C3FDCCA9EE51E2C8DC7A0E092DFFA63B5692D2DED7EA314CA2B63F155B981543E8E4C0DCB8FA7B11313C62D2A70DF37E3218561B1FE6E001FD1531350C2569E9F35A1911C84601DD593773988E48658AEDF71CC0B91C75BC0FA558320E4634B5B05889670C5EB466F61212EFD330696B0082392FC8AC9075BD0885C1C7BBD3BBFEEDBE3BEC8BFE2F8B5",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__RequestVerificationToken",
+      "value": "Pr4aN2_ZgeKTfIXCp6QUHCe0eE8uePJ06FoXw8BwMF36OcasDlu7Zm9Q_Ml3x19IkxOi0oDNQ9rOIboVnLr7sQooFWKha7sLpU7eU_VcxaQ1",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "G_ENABLED_IDPS",
+      "value": "google",
+      "domain": ".www.feedback4e.com",
+      "path": "/",
+      "expires": 1782760388.973402,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_hjSessionUser_5134032",
+      "value": "eyJpZCI6ImE4YTVkNzg4LTFhZGQtNWRkNy1iNDVjLWE0Yjg4MTY2MWFmMCIsImNyZWF0ZWQiOjE3NDgyMDAzODkxNzQsImV4aXN0aW5nIjp0cnVlfQ==",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1779736389,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_hjSession_5134032",
+      "value": "eyJpZCI6ImIwNTI5MjFiLWUwY2QtNGQwNS1hZGI0LTZmZGE0NzRiMTQyZSIsImMiOjE3NDgyMDAzODkxNzUsInMiOjEsInIiOjEsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0=",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1748202261,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.834127462.1748200389",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1748286789,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.585237609.1748200389",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1782760389.293815,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "NID",
+      "value": "524=dfGNqqH6oyGa1OmlDq-8RpigFcAXHlMZA88HSgCJIN1h0maiW4ypikTXaW94f9T_GjUjqtJOM2Esdbamoi9JJapg62i6HlPdP9xoswPYYj_HJ7nzITcB1j-FTw9T6sQ3KGPVHMfaDb0XOMf6wbUCK-qwoSajVy8xLI0rUSI9DzQuxPpB-1taxFZTCVj3lSHPqg",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1764011589.933253,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_4J1DRC6YS1",
+      "value": "GS2.1.s1748200389$o1$g0$t1748200390$j0$l0$h0",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1782760390.541807,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.feedback4e.com",
+      "localStorage": [
+        {
+          "name": "hjActiveViewportIds",
+          "value": "[{\"id\":\"01df8172-c0c3-403e-a35d-479792835c4e\",\"expireTimestamp\":1748221989470}]"
+        }
+      ]
+    }
+  ]
+}

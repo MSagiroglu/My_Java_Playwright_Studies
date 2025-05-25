@@ -1,0 +1,86 @@
+package OOPFramework;
+
+import com.microsoft.playwright.*;
+import org.testng.annotations.*;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class Hooks {
+
+    protected static Playwright playwright;
+    protected static Browser browser;
+    protected static BrowserContext adminContext;
+    protected static Page adminPage;
+
+    protected static BrowserContext userContext;
+    protected static Page userPage;
+
+    private static final String ADMIN_STORAGE_PATH = "AdminLogin.json";
+    private static final String USER_STORAGE_PATH = "UserLogin.json";
+
+    @BeforeTest
+    public void setUp() {
+        playwright = Playwright.create();
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+
+        // Admin için storage kontrol ve otomatik login
+        if (!isStorageValid(ADMIN_STORAGE_PATH)) {
+            System.out.println("Admin storage geçersiz, login yapılıyor...");
+            performLoginAndSaveStorage("https://f4e.app/tr/admin-login", "admin", "admin_password", ADMIN_STORAGE_PATH);
+        }
+
+     //  // Kullanıcı için storage kontrol ve otomatik login
+     //  if (!isStorageValid(USER_STORAGE_PATH)) {
+     //      System.out.println("User storage geçersiz, login yapılıyor...");
+     //      performLoginAndSaveStorage("https://f4e.app/tr/login", "user", "user_password", USER_STORAGE_PATH);
+     //  }
+
+        // Admin context ve page oluştur
+        adminContext = browser.newContext(new Browser.NewContextOptions()
+                .setStorageStatePath(Paths.get(ADMIN_STORAGE_PATH)));
+        adminPage = adminContext.newPage();
+
+      //  // User context ve page oluştur
+      //  userContext = browser.newContext(new Browser.NewContextOptions()
+      //          .setStorageStatePath(Paths.get(USER_STORAGE_PATH)));
+      //  userPage = userContext.newPage();
+    }
+
+    // Basit dosya var mı kontrolü (Geliştirilebilir: token expiry kontrolü)
+    private boolean isStorageValid(String storagePath) {
+        Path path = Paths.get(storagePath);
+        return path.toFile().exists();
+    }
+
+    // Login otomatik yap ve storage dosyasını kaydet
+    private void performLoginAndSaveStorage(String loginUrl, String username, String password, String storagePath) {
+        BrowserContext tempContext = browser.newContext();
+        Page tempPage = tempContext.newPage();
+        tempPage.navigate(loginUrl);
+
+        // Burada login formunun element ID/selector'ları farklı olabilir, kendine göre düzenle
+        tempPage.fill("#username", username);
+        tempPage.fill("#password", password);
+        tempPage.click("#loginButton");
+
+        // Giriş yapıldıktan sonra storage kaydet
+        tempContext.storageState(new BrowserContext.StorageStateOptions()
+                .setPath(Paths.get(storagePath)));
+
+        tempPage.close();
+        tempContext.close();
+    }
+
+    @AfterTest
+    public void tearDown() {
+        if (adminPage != null) adminPage.close();
+        if (adminContext != null) adminContext.close();
+
+        if (userPage != null) userPage.close();
+        if (userContext != null) userContext.close();
+
+        if (browser != null) browser.close();
+        if (playwright != null) playwright.close();
+    }
+}
