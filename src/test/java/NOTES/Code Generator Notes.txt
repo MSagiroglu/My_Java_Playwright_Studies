@@ -1,7 +1,7 @@
 # 📌 Playwright ile Login Sayfası için Test Kodları Üretme
 # Bu komut, Playwright'in "codegen" özelliğini kullanarak
 # belirtilen web sitesinin otomasyon test kodlarını oluşturur.
-mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen https://freelance-learn-automation.vercel.app/login"
+mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen https://www.feedback4e.com/Login"
 
 # 📌 Belirli Bir Viewport (Pencere Boyutu) ile Kod Üretme
 # Web sitesinin farklı ekran boyutlarında nasıl çalıştığını test etmek için
@@ -20,8 +20,8 @@ mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="co
 # 📌 Login Durumunu Kaydetmek için Depolama Dosyası Kullanımı
 # Kullanıcının oturum bilgilerini (çerezler ve local storage verileri) kaydeder.
 # Böylece testlerde tekrar giriş yapmadan oturum açık kalabilir.
-mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen --save-storage=login.json"
+mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen https://www.feedback4e.com/Login  --save-storage=login.json"
 
 # 📌 Önceden Kaydedilmiş Oturum Bilgilerini Yükleme
 # "login.json" dosyasındaki oturum bilgilerini yükleyerek, tekrar login işlemi yapmadan test çalıştırabilir.
-mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen --load-storage=login.json"
+mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen https://www.feedback4e.com/Login  --load-storage=login.json"

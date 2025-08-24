@@ -10,7 +10,7 @@ Bu komut, plugin bağımlılıklarının güncellenmiş versiyonlarını göster
 4- mvn versions:use-latest-plugins
 Bu komut, proje plugin bağımlılıklarını en son versiyonlara günceller.
 
-5- page.pause(); metodunu kullanarak sayfayı durdurabilir vr inspect ve kayıt ile
+5- page.pause(); metodunu kullanarak sayfayı durdurabilir ve inspect ve kayıt ile
                 elementleri kontrol edebilirsiniz ve örnek kodlarını inceleyebilirsiniz.
 
 6-
