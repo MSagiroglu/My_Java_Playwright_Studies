@@ -1,0 +1,113 @@
+{
+  "cookies": [
+    {
+      "name": "_culture",
+      "value": "tr-TR",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": ".ASPXAUTH",
+      "value": "CD006FB19C9383025EBCE8BF0D292ABF7ADAF4AF84F581630FF80D1994C3EB0FBAC4A0E53EAE827CEA9E408DEBD7C00D9F65B97D0F571EAD09E6D8F49619B03C48FA25ADFD5402096BED448AF2DFDA0D321BEA0140550FD5FB7F83BEC3A6929620923BD6F0C21F1D19AD4A399797577E36585E5909A85D36D8B11FA592C5004E34D963CCF246CB89A1E338F602012DD6EBD5CF3779F101DEF421D6CF64CE1DE74BC10AB7BC2C44B25E93223A6BE57EBC3C0BEFDF0C7FD5AB44136F4EB26334195D5C769A00568A205C1A58EE80D3A7437ECD5238B9348CBC49824FA89F5B527D361F4FF1229F5EBD34B33750A9E1A62F49C12D1FCFE9EA8799A7DC6EB25BADD7F99141CFCA4E5BFEBE521C19380BF031740C2C5C1A3DA0FCBA71695BF24110689EB85D8C7A5A804E390CDBC9C82FDA311B0E532F5F65B0337736DA3D09B57496E19A19C3F7392BEE7517E6FDE4AF7D6862CF96EB3CCC51AEB68CFAECBA8C249F",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__RequestVerificationToken",
+      "value": "QF_leU3uV-m57WYnOCkhh7wUWJ7_sCMZc6HiLpLRafSYoc2V-hfRlCcpf2VvRSYNX-knHy1rNVOEk9Ys8k06ICkUbVthFah_IXh41ExM3881",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_hjSessionUser_5134032",
+      "value": "eyJpZCI6IjliMTZjNjg1LTEzMzctNTUyOC1hNmI4LWRiMGZmYWEwYzA4OCIsImNyZWF0ZWQiOjE3NTYwMzQxODE5MzMsImV4aXN0aW5nIjp0cnVlfQ==",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1787570181,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_hjSession_5134032",
+      "value": "eyJpZCI6ImNlMWZlYjM4LTEwYmQtNDA0Mi1hZGI0LTg2MDQ0N2M1ZThlMiIsImMiOjE3NTYwMzQxODE5MzQsInMiOjEsInIiOjEsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0=",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1756036015,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "G_ENABLED_IDPS",
+      "value": "google",
+      "domain": ".www.feedback4e.com",
+      "path": "/",
+      "expires": 1790594182.07146,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.1318855234.1756034182",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1790594182.514627,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.683237824.1756034183",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1756120582,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_4J1DRC6YS1",
+      "value": "GS2.1.s1756034182$o1$g1$t1756034273$j60$l0$h0",
+      "domain": ".feedback4e.com",
+      "path": "/",
+      "expires": 1790594273.153384,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.feedback4e.com",
+      "localStorage": [
+        {
+          "name": "mp_88131735faa9750711be743951dbd7ba_mixpanel",
+          "value": "{\"distinct_id\":343671,\"$device_id\":\"64515e45-7168-49cc-80c4-c4d73435e049\",\"$initial_referrer\":\"https://www.feedback4e.com/Login/Index\",\"$initial_referring_domain\":\"www.feedback4e.com\",\"__mps\":{},\"__mpso\":{},\"__mpus\":{},\"__mpa\":{},\"__mpu\":{},\"__mpr\":[],\"__mpap\":[],\"$user_id\":343671}"
+        },
+        {
+          "name": "__mpq_88131735faa9750711be743951dbd7ba_pp",
+          "value": "[]"
+        },
+        {
+          "name": "__mpq_88131735faa9750711be743951dbd7ba_ev",
+          "value": "[]"
+        }
+      ]
+    }
+  ]
+}
